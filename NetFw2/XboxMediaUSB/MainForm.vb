@@ -221,6 +221,40 @@ Public Class MainForm
     End Sub
 
     Private Sub CreateDirectories()
+        'Create Emulators folder
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators")
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\Dolphin")
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\DuckStation")
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\Flycast")
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\PPSSPP")
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\RetroArch")
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\XBSX2")
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\Xenia")
+
+        'Create DuckStation Sub-folders
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\DuckStation\bios")
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\DuckStation\memcards")
+
+        'Create Flycast Sub-folders
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\Flycast\Cheats")
+
+        'Create RetroArch Sub-folders
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\RetroArch\assets")
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\RetroArch\cheats")
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\RetroArch\config")
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\RetroArch\info")
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\RetroArch\logs")
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\RetroArch\overlays")
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\RetroArch\playlists")
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\RetroArch\saves")
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\RetroArch\shaders")
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\RetroArch\states")
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\RetroArch\system")
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\RetroArch\system\dolphin-emu")
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\RetroArch\system\pcsx2")
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\RetroArch\system\pcsx2\bios")
+        Directory.CreateDirectory(SelectedDrive.Name + "Emulators\RetroArch\thumbnails")
+
         'Create Games folder
         Directory.CreateDirectory(SelectedDrive.Name + "Games")
         Directory.CreateDirectory(SelectedDrive.Name + "Games\Amstrad - GX4000")
@@ -234,6 +268,7 @@ Public Class MainForm
         Directory.CreateDirectory(SelectedDrive.Name + "Games\FBNeo - Arcade Games")
         Directory.CreateDirectory(SelectedDrive.Name + "Games\Mattel - Intellivision")
         Directory.CreateDirectory(SelectedDrive.Name + "Games\Microsoft - MSX - MSX2 - MSX2P - MSX Turbo R")
+        Directory.CreateDirectory(SelectedDrive.Name + "Games\Microsoft - Xbox 360")
         Directory.CreateDirectory(SelectedDrive.Name + "Games\NEC - PC Engine - TurboGrafx 16")
         Directory.CreateDirectory(SelectedDrive.Name + "Games\NEC - PC Engine CD - TurboGrafx-CD")
         Directory.CreateDirectory(SelectedDrive.Name + "Games\NEC - PC Engine SuperGrafx")
@@ -258,24 +293,7 @@ Public Class MainForm
         Directory.CreateDirectory(SelectedDrive.Name + "Games\Sega - Mega Drive - Genesis")
         Directory.CreateDirectory(SelectedDrive.Name + "Games\Sega - Mega-CD - Sega CD")
         Directory.CreateDirectory(SelectedDrive.Name + "Games\Sega - Saturn")
-        'Create RetroArch folder
-        Directory.CreateDirectory(SelectedDrive.Name + "RetroArch")
-        Directory.CreateDirectory(SelectedDrive.Name + "RetroArch\assets")
-        Directory.CreateDirectory(SelectedDrive.Name + "RetroArch\cheats")
-        Directory.CreateDirectory(SelectedDrive.Name + "RetroArch\config")
-        Directory.CreateDirectory(SelectedDrive.Name + "RetroArch\info")
-        Directory.CreateDirectory(SelectedDrive.Name + "RetroArch\logs")
-        Directory.CreateDirectory(SelectedDrive.Name + "RetroArch\overlays")
-        Directory.CreateDirectory(SelectedDrive.Name + "RetroArch\playlists")
-        Directory.CreateDirectory(SelectedDrive.Name + "RetroArch\saves")
-        Directory.CreateDirectory(SelectedDrive.Name + "RetroArch\shaders")
-        Directory.CreateDirectory(SelectedDrive.Name + "RetroArch\states")
-        Directory.CreateDirectory(SelectedDrive.Name + "RetroArch\system")
-        Directory.CreateDirectory(SelectedDrive.Name + "RetroArch\system\dolphin-emu")
-        Directory.CreateDirectory(SelectedDrive.Name + "RetroArch\system\pcsx2")
-        Directory.CreateDirectory(SelectedDrive.Name + "RetroArch\thumbnails")
-        'Create BIOS folder
-        Directory.CreateDirectory(SelectedDrive.Name + "BIOS")
+    
     End Sub
 
     Private Sub CheckConfigAndLanguage()
